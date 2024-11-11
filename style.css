@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    /* CSS HEX */
+--primary: #fefae0ff;
+--secondary: #606c38ff;
+--tertiary1: #283618ff;
+--tertiary2: #dda15eff;
+--tertiary3: #bc6c25ff;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header, footer {
+    background-color: var(--secondary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    min-height: 15vh;
+}
+
+header > p {
+    color: var(--tertiary3);
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+footer > p {
+    color: var(--tertiary3);
+    font-size: large;
+    font-weight: 500;
+}
+
+nav a {
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    font-size: smaller; 
+    text-decoration: none;
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+}
+
+nav a:hover {
+    background-color: var(--tertiary3);
+}
+
+main {
+    min-height: 80vh;
+    padding: 1rem;
+}
+
+/*Select the first image that is a first-level child of main*/
+main > img:nth-of-type(1) {
+    width: 100%;  
+    padding: 0 3rem;
+    height: 30vw;  
+    max-height: 50vh;
+    object-fit: cover;
+}
+
+#home main > img:nth-of-type(1) {
+    padding: 0;
+    height: 50vw;
+}
+
+h1 {
+    color: var(--tertiary3);
+}
+
+h1, p {
+    margin: 0.5rem 0;
+}
+
+p {
+    color: var(--tertiary1)
+}
+
+footer {
+    min-height: 5vh;
+}

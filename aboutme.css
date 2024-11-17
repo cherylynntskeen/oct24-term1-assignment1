@@ -106,46 +106,15 @@
         text-align: left;
         width: 100vw;
         padding: 0rem 5rem 1rem 5rem;
-    }
-    main > #main_page_images_box1 {
-        max-width: 100vw;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        padding: 1.5rem;
-        display: none;
-    }
-    main > #main_page_images_box1 > img {
-        display: flex;
+    }    
+    main > .main_page_images_box1 {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        width: 100vw;
         justify-content: center;
         align-items: center;
-        object-fit: cover;
-        max-width: 40vw;
-        display: none;
-    }
-    main > #main_page_images_box2 {
-        max-width: 100vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 1.5rem 0rem 5rem 0rem;
-        display: none;
-    }
-    main > #main_page_images_box2 > img {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        max-width: 80vw;
-        object-fit: cover;
-        display: none;
-    }
-    main > #main_page_images_box2 > #secondimg > {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        max-width: 20vw;
-        object-fit: cover;
+        padding-right: 2rem;
         display: none;
     }
    
@@ -279,80 +248,49 @@
             padding: 0rem 5rem 1rem 4rem;
         }
 
-        .main_page_images_box1 {
+        main > .main_page_images_box1 {
             display: grid;
             grid-template-rows: 1fr 1fr;
             grid-template-columns: 1fr 1fr;
+            width: 100vw;
+            justify-content: center;
+            align-items: center;
+            padding-right: 2rem;
+        }
+        main > .main_page_images_box1 > .img1 {
             width: 50vw;
-            gap: 1rem;
-        }
-        .img1 {
-            width: 20vw;
-            height: 20vw;
-            grid-column: span 1;
-        }
-        .img1 > img {
-            width: 20vw;
-            height: 20vw;
-        }
-
-        .img2 {
-            width: 20vw;
-            height: 20vw;
-            grid-column: span 1;
-        }
-        .img2 > img {
-            width: 20vw;
-            height: 20vw;
-        }
-
-        .img3 {
-            width: 40vw;
             height: 40vw;
+            justify-content: center;
+            align-items: center;
+        }
+        main > .main_page_images_box1 > .img1 > img {
+            width: 50vw;
+            height: 40vw;
+            object-fit: cover;
+        }
+
+        main > .main_page_images_box1 > .img2 {
+            width: 50vw;
+            height: 40vw;
+            justify-content: center;
+            align-items: center;
+        }
+        main > .main_page_images_box1 > .img2 > img {
+            width: 50vw;
+            height: 40vw;
+            object-fit: cover;
+        }
+
+        main > .main_page_images_box1 > .img3 {
             grid-column: span 2;
+            justify-content: center;
+            align-items: center;
         }
-        .img3 > img {
-            width: 40vw;
+        main > .main_page_images_box1 > .img3 > img {
+            width: 100vw;
             height: 40vw;
-        }
-
-
-        /* main > #main_page_images_box1 {
-            max-width: 100vw;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            padding: 1.5rem;
-        }
-        main > #main_page_images_box1 > img {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            object-fit: cover;
-            max-width: 40vw;
-        }
-        main > #main_page_images_box2 {
-            max-width: 100vw;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding: 1.5rem;
-        }
-        main > #main_page_images_box2 > img {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            max-width: 80vw;
             object-fit: cover;
         }
-        main > #main_page_images_box2 > #secondimg > {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            max-width: 20vw;
-            object-fit: cover;
-            display: none;
-        } */
 
  
     
@@ -397,7 +335,7 @@
     /* -------------------------------------------------------------------------------- */
 
 
-/*DESKTOP - HOME PAGE*/
+/*DESKTOP - ABOUT ME PAGE*/
 @media only screen and (min-width: 768px) and (max-width: 1281px){
     /* BODY */
     body {
@@ -410,7 +348,7 @@
     
     /* HEADER */
     header {
-        width: 100%;
+        width: 100vw;
         min-height: 15vh;
         display: flex;
         flex-direction: row;
@@ -507,44 +445,52 @@
         width: 70vw;
         padding: 0rem 5rem 1rem 4rem;
     }
-
-
-    main > #main_page_images_box1 {
-        max-width: 100vw;
-        max-height: 50vw;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        padding: 1.5rem;
-
-    }
-    main > #main_page_images_box1 > img {
-        display: flex;
+    main > .main_page_images_box1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 100vw;
         justify-content: center;
         align-items: center;
+        padding: 1rem;
+    }
+    main > .main_page_images_box1 > .img1 {
+        width: 30vw;
+        height: 40vw;
+        justify-content: center;
+        align-items: center;
+    }
+    main > .main_page_images_box1 > .img1 > img {
+        width: 30vw;
+        height: 40vw;
         object-fit: cover;
-        max-width: 20vw;
     }
-    main > #main_page_images_box2 {
-        max-width: 20vw;
-        display: flex;
-        flex-direction: row;
+
+    main > .main_page_images_box1 > .img2 {
+        width: 30vw;
+        height: 40vw;
         justify-content: center;
         align-items: center;
-        padding: 1.5rem 0rem 5rem 0rem;
-        display: none;
     }
-    main > #main_page_images_box2 > #secondimg {
-        display: flex;
+    main > .main_page_images_box1 > .img2 > img {
+        width: 30vw;
+        height: 40vw;
+        object-fit: cover;
+    }
+
+    main > .main_page_images_box1 > .img3 {
         justify-content: center;
         align-items: center;
-        max-width: 20vw;
+    }
+    main > .main_page_images_box1 > .img3 > img {
+        width: 30vw;
+        height: 40vw;
         object-fit: cover;
     }
     
     
     /* FOOTER */
     footer {
+        width: 100vw;
         min-height: 20vh;
         background-color: var(--tertiary1);
         display: flex;

@@ -12,7 +12,7 @@
 --tertiary3: #e98a15;
 }
 
-/*MOBILE - PROJECTS PAGE*/
+/*MOBILE - SKILLS PAGE*/
 @media only screen and (max-width: 480px){
 /* BODY */
     body {
@@ -128,8 +128,7 @@
         object-fit: cover;
         padding: 0.5rem 3rem;
     }
-    main > #main_page_section2 > #main_page_content_skills > p {
-        text-align: left;
+    main > #main_page_section2 > #main_page_content_skills > .body_copy_skills > p {
         width: 80vw;
         padding: 0rem 1rem;
     }
@@ -151,8 +150,7 @@
         padding: 0.5rem 3rem;
 
     }
-    main > #main_page_section2 > #main_page_content_education > p {
-        text-align: left;
+    main > #main_page_section2 > #main_page_content_education > .body_copy_education > p {
         width: 80vw;
         padding: 0rem 1rem;
     }
@@ -174,12 +172,10 @@
         padding: 0.5rem 3rem;
 
     }
-    main > #main_page_section2 > #main_page_content_experience > p {
-        text-align: left;
+    main > #main_page_section2 > #main_page_content_experience > .body_copy_experience > p {
         width: 80vw;
         padding: 0rem 1rem;
     }
-
 
    
 /* FOOTER */
@@ -205,19 +201,33 @@
             gap: 0.25rem;
             display: none;
     }
+    main > #main_page_section2 > #main_page_content_skills > .main_page_images_skills {
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+        display: none;
+    }
+    main > #main_page_section2 > #main_page_content_education > .main_page_images_education {
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+        display: none;
+    }
+    main > #main_page_section2 > #main_page_content_experience > .main_page_images_experience {
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+        display: none;
+    }
 
 }
 
 
 
 
-
-
-
-
 /* --------------------------------------------------------------------------------------- */
 
-/*TABLET - PROJECTS PAGE*/
+/*TABLET - SKILLS PAGE*/
 @media only screen and (min-width: 481px) and (max-width: 768px){
 /* BODY */
 body {
@@ -330,7 +340,7 @@ header > #sectionthree > #logo {
         main > #main_page_content > p {
             text-align: left;
             width: 100vw;
-            padding: 0rem 5rem 1rem 5rem;
+            padding: 0rem 4rem 1rem 4rem;
         }
         main > #main_page_section2 {
             display: flex;
@@ -344,7 +354,7 @@ header > #sectionthree > #logo {
             color: var(--tertiary3);
             font-size: large;
             text-align: left;
-            padding: 3rem 3rem 0rem 2rem;
+            padding: 3rem 3rem 0.5rem 2rem;
             width: 100vw;
         }
         main > #main_page_section2 > #main_page_content_skills {
@@ -356,20 +366,110 @@ header > #sectionthree > #logo {
             width: 50vw;
             padding: 0rem 2rem;
         }
-        main > #main_page_section2 > #main_page_content_skills > .main_page_images_skills >  .skills_img1 {
-            width: 20vw;
+        main > #main_page_section2 > #main_page_content_skills > .main_page_images_skills {
+            display: flex;
+            flex-direction: column;
+            width: 50vw;
+        }
+        main > #main_page_section2 > #main_page_content_skills > .main_page_images_skills >  .skills_img1 > img{
+            width: 50vw;
             height: 30vh;
             object-fit: cover;
         }  
-        main > #main_page_section2 > #main_page_content_skills > .main_page_images_skills >  .skills_img2 {
-            width: 20vw;
-            height: 10vh;
+        main > #main_page_section2 > #main_page_content_skills > .main_page_images_skills >  .skills_img2 > img{
+            width: 50vw;
+            height: 30vh;
             object-fit: cover;
         }
-        main > #main_page_section2 > #main_page_content_skills > .main_page_images_skills >  .skills_img3 {
-            width: 20vw;
-            height: 10vh;
-            object-fit: contain;
+        main > #main_page_section2 > #main_page_content_skills > .main_page_images_skills >  .skills_img3 > img {
+            width: 50vw;
+            height: 30vh;
+            object-fit: cover;
+        }
+        main > #main_page_section2 > #education_heading {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            width: 100vw;
+        }
+        main > #main_page_section2 > #education_heading > h2 {
+            color: var(--tertiary3);
+            font-size: large;
+            padding: 3rem 0rem 0.5rem 2rem;
+            grid-column-start: 2;            
+        }
+        main > #main_page_section2 > #main_page_content_education {
+            display: flex;
+            flex-direction: row;
+            width: 100vw;
+        }
+        main > #main_page_section2 > #main_page_content_education > .body_copy_education {
+            display: flex;
+            order: 2;
+        }
+        main > #main_page_section2 > #main_page_content_education > .body_copy_education > p {
+            width: 50vw;
+            padding: 0rem 2rem;
+        }
+        main > #main_page_section2 > #main_page_content_education > .main_page_images_education {
+            display: flex;
+            flex-direction: column;
+            order: 1;
+        }
+        main > #main_page_section2 > #main_page_content_education > .main_page_images_education >  .education_img1 > img {
+            width: 50vw;
+            height: 30vh;
+            object-fit: cover;
+        }  
+        main > #main_page_section2 > #main_page_content_education > .main_page_images_education >  .education_img1 > img {
+            width: 50vw;
+            height: 30vh;
+            object-fit: cover;
+        }  
+        main > #main_page_section2 > #main_page_content_education > .main_page_images_education >  .education_img2 > img {
+            width: 50vw;
+            height: 30vh;
+            object-fit: cover;
+        }
+        main > #main_page_section2 > #main_page_content_education > .main_page_images_education >  .education_img3 > img {
+            width: 50vw;
+            height: 30vh;
+            object-fit: cover;
+        }
+        main > #main_page_section2 > #experience_heading > h2 {
+            color: var(--tertiary3);
+            font-size: large;
+            text-align: left;
+            padding: 3rem 3rem 0.5rem 2rem;
+            width: 100vw;
+        }
+        main > #main_page_section2 > #main_page_content_experience {
+            display: flex;
+            flex-direction: row;
+            width: 100vw;
+        }
+        main > #main_page_section2 > #main_page_content_experience > .body_copy_experience > p {
+            width: 50vw;
+            padding: 0rem 2rem;
+        }
+        main > #main_page_section2 > #main_page_content_experience > .main_page_images_experience {
+            display: flex;
+            flex-direction: column;
+            /* width: 50vw; */
+        }
+        main > #main_page_section2 > #main_page_content_experience > .main_page_images_experience >  .experience_img1 > img{
+            width: 50vw;
+            height: 30vh;
+            object-fit: cover;
+        }  
+        main > #main_page_section2 > #main_page_content_experience > .main_page_images_experience >  .experience_img2 > img{
+            width: 50vw;
+            height: 30vh;
+            object-fit: cover;
+        }
+        main > #main_page_section2 > #main_page_content_experience > .main_page_images_experience >  .experience_img3 > img {
+            width: 50vw;
+            height: 30vh;
+            object-fit: cover;
         }
     
        
@@ -417,6 +517,22 @@ header > #sectionthree > #logo {
         padding: 0.5rem 3rem;
         display: none;
     }
+    main > #main_page_section2 > #main_page_content_education > img {
+        width: 100vw;
+        height: 25vh;
+        object-fit: cover;
+        padding: 0.5rem 3rem;
+        display: none;
+
+    }
+    main > #main_page_section2 > #main_page_content_experience > img {
+        width: 100vw;
+        height: 25vh;
+        object-fit: cover;
+        padding: 0.5rem 3rem;
+        display: none;
+
+    }
 }
 
 
@@ -425,7 +541,7 @@ header > #sectionthree > #logo {
 /* -------------------------------------------------------------------------------- */
 
 
-/*DESKTOP - PROJECTS PAGE*/
+/*DESKTOP - SKILLS PAGE*/
 @media only screen and (min-width: 768px) and (max-width: 1281px){
     /* BODY */
     body {
@@ -535,387 +651,194 @@ header > #sectionthree > #logo {
         width: 70vw;
         padding: 0rem 5rem 1rem 4rem;
     }
-    main > #main_page_section2 {
-        display: flex;
-        flex-direction: column;
-        background-color: var(--secondary);
-        margin-top: 3rem;
-        padding-bottom: 5rem;
-        width: 100vw;
-    }
-    main > #main_page_section2 > #main_page_content_publication {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    main > #main_page_section2 > #graphicdesign_heading {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        display: none;
-    }
-    main > #main_page_section2 > #publication_heading {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    main > #main_page_section2 > #publication_heading > h2 {
+    main > #main_page_section2 > #skills_heading > h2 {
         color: var(--tertiary3);
         font-size: large;
         text-align: left;
-        padding: 1.5rem 3rem 0rem 0rem;
-        width: 80vw;
-    }
-    main > #main_page_section2 > #main_page_content_publication > img {
-        width: 80vw;
-        object-fit: cover;
-        padding: 0.5rem 3rem; 
-        display: none;
-    }
-    main > #main_page_section2 > #main_page_content_publication > p {
-        text-align: left;
-        width: 80vw;
-        padding-bottom: 1rem;
-    }
-    main > #main_page_section2 > .main_page_images_publicationdesign {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        padding: 3rem 3rem 0.5rem 2rem;
         width: 100vw;
-        justify-items: center;
     }
-    main > #main_page_section2 > .main_page_images_publicationdesign > .img1 {
-        width: 30vw;
-        height: 40vw;
+    main > #main_page_section2 > #main_page_content_skills {
+        display: flex;
+        flex-direction: row;
     }
-    main > #main_page_section2 > .main_page_images_publicationdesign > .img1 > img {
-        width: 30vw;
-        height: 40vw;
-        object-fit: cover;
+    main > #main_page_section2 > #main_page_content_skills > .body_copy_skills > p {
+        max-width: 30vw;
+        padding: 0rem 2rem;
     }
-    main > #main_page_section2 > .main_page_images_publicationdesign > .img2 {
-        width: 30vw;
-        height: 40vw;
+    main > #main_page_section2 > #main_page_content_skills > .main_page_images_skills {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        max-width: 70vw;
+        max-height: 80vh;
+        gap: 0.5rem;
     }
-    main > #main_page_section2 > .main_page_images_publicationdesign > .img2 > img {
-        width: 30vw;
-        height: 40vw;
-        object-fit: cover;
-    }
-    main > #main_page_section2 > .main_page_images_publicationdesign > .img3 {
-        width: 30vw;
+    main > #main_page_section2 > #main_page_content_skills >.main_page_images_skills > .skills_img1 {
+        width: 35vw;
         height: 40vh;
+        justify-content: center;
+        align-items: center;
     }
-    main > #main_page_section2 > .main_page_images_publicationdesign > .img3 > img {
-        width: 30vw;
-        height: 40vw;
+    main > #main_page_section2 > #main_page_content_skills > .main_page_images_skills > .skills_img1 > img {
+        width: 35vw;
+        height: 40vh;
+        object-fit: cover;
+    }
+    main > #main_page_section2 > #main_page_content_skills > .main_page_images_skills > .skills_img2 {
+        width: 35vw;
+        height: 40vh;
+        justify-content: center;
+        align-items: center;
+    }
+    main > #main_page_section2 > #main_page_content_skills > .main_page_images_skills > .skills_img2 > img {
+        width: 35vw;
+        height: 40vh;
+        object-fit: cover;
+    }
+    main > #main_page_section2 > #main_page_content_skills > .main_page_images_skills > .skills_img3 {
+        width: 70vw;
+        height: 30vh;
+        grid-column: span 2;
+    }
+    main > #main_page_section2 > #main_page_content_skills > .main_page_images_skills > .skills_img3 > img {
+        width: 70vw;
+        height: 30vh;
         object-fit: cover;
 
     }
-    main > #main_page_section2 > #main_page_content_branddesign {
-        display: flex;
-        flex-direction: column;
-        justify-items: center;
-        align-items: center;
+    main > #main_page_section2 > #education_heading {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width: 100vw;
     }
-    main > #main_page_section2 > #branddesign_heading {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    main > #main_page_section2 > #education_heading > h2 {
+        color: var(--tertiary3);
+        font-size: large;
+        padding: 3rem 3rem 0.5rem 0rem;
+        grid-column-start: 4;            
     }
-    main > #main_page_section2 > #branddesign_heading > h2 {
+    /* main > #main_page_section2 > #education_heading > h2 {
         color: var(--tertiary3);
         font-size: large;
         text-align: left;
-        padding: 1.5rem 3rem 0rem 0rem;
-        width: 80vw;
+        padding: 3rem 3rem 0.5rem 2rem;
+        width: 100vw;
+    } */
+    main > #main_page_section2 > #main_page_content_education {
+        display: flex;
+        flex-direction: row;
     }
-    main > #main_page_section2 > #main_page_content_branddesign > img {
-        width: 80vw;
+    main > #main_page_section2 > #main_page_content_education > .body_copy_education {
+        display: flex;
+        order: 2;
+    }
+    main > #main_page_section2 > #main_page_content_education > .body_copy_education > p {
+        max-width: 30vw;
+        padding: 0rem 2rem;
+    }
+    main > #main_page_section2 > #main_page_content_education > .main_page_images_education {
+        display: flex;
+        flex-direction: column;
+        order: 1;
+    }
+    main > #main_page_section2 > #main_page_content_education > .main_page_images_education {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        max-width: 70vw;
+        max-height: 80vh;
+        gap: 0.5rem;
+    }
+    main > #main_page_section2 > #main_page_content_education >.main_page_images_education > .education_img1 {
+        width: 35vw;
+        height: 40vh;
+        justify-content: center;
+        align-items: center;
+    }
+    main > #main_page_section2 > #main_page_content_education > .main_page_images_education > .education_img1 > img {
+        width: 35vw;
+        height: 40vh;
         object-fit: cover;
-        padding: 0.5rem 3rem;
-        display: none;
+    }
+    main > #main_page_section2 > #main_page_content_education > .main_page_images_education > .education_img2 {
+        width: 35vw;
+        height: 40vh;
+        justify-content: center;
+        align-items: center;
+    }
+    main > #main_page_section2 > #main_page_content_education > .main_page_images_education > .education_img2 > img {
+        width: 35vw;
+        height: 40vh;
+        object-fit: cover;
+    }
+    main > #main_page_section2 > #main_page_content_education > .main_page_images_education > .education_img3 {
+        width: 70vw;
+        height: 30vh;
+        grid-column: span 2;
+    }
+    main > #main_page_section2 > #main_page_content_education > .main_page_images_education > .education_img3 > img {
+        width: 70vw;
+        height: 30vh;
+        object-fit: cover;
 
     }
-    main > #main_page_section2 > #main_page_content_branddesign > p {
+
+    main > #main_page_section2 > #experience_heading > h2 {
+        color: var(--tertiary3);
+        font-size: large;
         text-align: left;
-        width: 80vw;
-        padding-bottom: 1rem;
-    }
-    main > #main_page_section2 > .main_page_images_branddesign {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        padding: 3rem 3rem 0.5rem 2rem;
         width: 100vw;
-        justify-items: center;
     }
-    main > #main_page_section2 > .main_page_images_branddesign > .img1 {
-        width: 30vw;
-        height: 40vh;
-    }
-    main > #main_page_section2 > .main_page_images_branddesign > .img1 > img {
-        width: 30vw;
-        height: 40vh;
-        object-fit: contain;
-    }
-    main > #main_page_section2 > .main_page_images_branddesign > .img2 {
-        width: 30vw;
-        height: 40vh;
-    }
-    main > #main_page_section2 > .main_page_images_branddesign > .img2 > img {
-        width: 30vw;
-        height: 40vh;
-        object-fit: contain;
-    }
-    main > #main_page_section2 > .main_page_images_branddesign > .img3 {
-        width: 30vw;
-        height: 40vh;
-    }
-    main > #main_page_section2 > .main_page_images_branddesign > .img3 > img {
-        width: 30vw;
-        height: 40vw;
-        object-fit: contain;
-    }
-    main > #main_page_section2 > #webdev_heading {
+    main > #main_page_section2 > #main_page_content_experience {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        display: none;
+        flex-direction: row;
     }
-    main > #main_page_section2 > #webdev_heading > h2 {
-        color: var(--tertiary3);
-        font-size: large;
-        text-align: left;
-        padding: 1.5rem 3rem 0rem 1rem;
-        width: 80vw;
+    main > #main_page_section2 > #main_page_content_experience > .body_copy_experience > p {
+        max-width: 30vw;
+        padding: 0rem 2rem;
     }
-    main > #main_page_section2 > #main_page_content_website1 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    main > #main_page_section2 > #website1_heading {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    main > #main_page_section2 > #website1_heading > h2 {
-        color: var(--tertiary3);
-        font-size: large;
-        text-align: left;
-        padding: 1.5rem 3rem 0rem 1rem;
-        width: 80vw;
-        display: none;
-    }
-    main > #main_page_section2 > #website1_heading2 > h2 {
-        color: var(--tertiary3);
-        font-size: large;
-        text-align: left;
-        padding: 1.5rem 3rem 0rem 4rem;
-        width: 80vw;
-    }
-    main > #main_page_section2 > #main_page_content_website1 > img {
-        width: 80vw;
-        object-fit: cover;
-        padding: 0.5rem 3rem;
-        display: none;
-    }
-    main > #main_page_section2 > #main_page_content_website1 > p {
-        text-align: left;
-        width: 80vw;
-        padding-bottom: 1rem;
-    }
-    main > #main_page_section2 > .main_page_images_webdesign {
+    main > #main_page_section2 > #main_page_content_experience > .main_page_images_experience {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        width: 100vw;
-        justify-items: center;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        max-width: 70vw;
+        max-height: 80vh;
+        gap: 0.5rem;
     }
-    main > #main_page_section2 > .main_page_images_webdesign > .img1 {
-        width: 30vw;
+    main > #main_page_section2 > #main_page_content_experience >.main_page_images_experience > .experience_img1 {
+        width: 35vw;
         height: 40vh;
-    }
-    main > #main_page_section2 > .main_page_images_webdesign > .img1 > img {
-        width: 30vw;
-        height: 40vh;
-        object-fit: cover;
-    }
-    main > #main_page_section2 > .main_page_images_webdesign > .img2 {
-        width: 30vw;
-        height: 40vh;
-    }
-    main > #main_page_section2 > .main_page_images_webdesign > .img2 > img {
-        width: 30vw;
-        height: 40vh;
-        object-fit: cover;
-    }
-    main > #main_page_section2 > .main_page_images_webdesign > .img3 {
-        width: 30vw;
-        height: 40vh;
-    }
-    main > #main_page_section2 > .main_page_images_webdesign > .img3 > img {
-        width: 30vw;
-        height: 40vh;
-        object-fit: cover;
-    }
-    main > #main_page_section2 > #main_page_content_website2 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        display: none;
-    }
-    main > #main_page_section2 > #website2_heading {
-        display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    main > #main_page_section2 > #website2_heading > h2 {
-        color: var(--tertiary3);
-        font-size: large;
-        text-align: left;
-        padding: 1rem 3rem 0rem 3rem;
-        width: 80vw;
-        display: none;
-    }
-    main > #main_page_section2 > #main_page_content_website2 > img {
-        width: 80vw;
-        object-fit: cover;
-        padding: 0.5rem 3rem;
-    }
-    main > #main_page_section2 > #main_page_content_website2 > p {
-        text-align: left;
-        width: 80vw;
-        padding: 0rem 3rem;
-    }
-    main > #main_page_section2 > .main_page_images_artwork {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        width: 100vw;
-        justify-items: center;
-    }
-    main > #main_page_section2 > .main_page_images_artwork > .img1 {
-        width: 30vw;
-        height: 40vh;
-    }
-    main > #main_page_section2 > .main_page_images_artwork > .img1 > img {
-        width: 30vw;
+    main > #main_page_section2 > #main_page_content_experience > .main_page_images_experience > .experience_img1 > img {
+        width: 35vw;
         height: 40vh;
         object-fit: cover;
     }
-    main > #main_page_section2 > .main_page_images_artwork > .img2 {
-        width: 30vw;
+    main > #main_page_section2 > #main_page_content_experience > .main_page_images_experience > .experience_img2 {
+        width: 35vw;
         height: 40vh;
-    }
-    main > #main_page_section2 > .main_page_images_artwork > .img2 > img {
-        width: 30vw;
-        height: 40vh;
-        object-fit: cover;
-    }
-    main > #main_page_section2 > .main_page_images_artwork > .img3 {
-        width: 30vw;
-        height: 40vh;
-    }
-    main > #main_page_section2 > .main_page_images_artwork > .img3 > img {
-        width: 30vw;
-        height: 40vh;
-        object-fit: cover;
-    }
-    main > #main_page_section2 > #artwork_heading {
-        display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    main > #main_page_section2 > #artwork_heading > h2 {
-        color: var(--tertiary3);
-        font-size: x-large;
-        text-align: left;
-        padding: 2rem 3rem 0rem 3rem;
-        width: 80vw;
-        display: none;
-    }
-    main > #main_page_section2 > #artwork_heading2 > h2 {
-        color: var(--tertiary3);
-        font-size: large;
-        text-align: left;
-        padding: 2rem 3rem 0rem 4rem;
-        width: 80vw;
-    }
-    main > #main_page_section2 > #main_page_content_charcoal {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    main > #main_page_section2 > #charcoal_heading {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    main > #main_page_section2 > #charcoal_heading > h2 {
-        color: var(--tertiary3);
-        font-size: large;
-        text-align: left;
-        padding: 1rem 3rem 0rem 3rem;
-        width: 80vw;
-        display: none;
-    }
-    main > #main_page_section2 > #charcoal_heading2 > h2 {
-        color: var(--tertiary3);
-        font-size: large;
-        text-align: left;
-        padding: 1rem 3rem 0rem 3rem;
-        width: 80vw;
-    }
-    main > #main_page_section2 > #main_page_content_charcoal > img {
-        width: 80vw;
+    main > #main_page_section2 > #main_page_content_experience > .main_page_images_experience > .experience_img2 > img {
+        width: 35vw;
+        height: 40vh;
         object-fit: cover;
-        padding: 0.5rem 3rem;
-        display: none;
     }
-    main > #main_page_section2 > #main_page_content_charcoal > p {
-        text-align: left;
-        width: 80vw;
-        padding-bottom: 1rem;
+    main > #main_page_section2 > #main_page_content_experience > .main_page_images_experience > .experience_img3 {
+        width: 70vw;
+        height: 30vh;
+        grid-column: span 2;
     }
-    main > #main_page_section2 > #main_page_content_mixedmedia {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        display: none;
-    }
-    main > #main_page_section2 > #mixedmedia_heading {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    main > #main_page_section2 > #mixedmedia_heading > h2 {
-        color: var(--tertiary3);
-        font-size: large;
-        text-align: left;
-        padding: 1rem 3rem 0rem 3rem;
-        width: 80vw;
-        display: none;
-    }
-    main > #main_page_section2 > #main_page_content_mixedmedia > img {
-        width: 80vw;
+    main > #main_page_section2 > #main_page_content_experience > .main_page_images_experience > .experience_img3 > img {
+        width: 70vw;
+        height: 30vh;
         object-fit: cover;
-        padding: 0.5rem 3rem;
-    }
-    main > #main_page_section2 > #main_page_content_mixedmedia > p {
-        text-align: left;
-        width: 80vw;
-        padding: 0rem 3rem;
+
     }
     
     
@@ -952,5 +875,30 @@ header > #sectionthree > #logo {
     footer > #footer_list_right > a {
         text-decoration: none;
         color: var(--secondary);
+    }
+
+    /* CODE SET TO display: none; FOR DESKTOP VERSION*/
+    main > #main_page_section2 > #main_page_content_skills > img {
+        width: 100vw;
+        height: 25vh;
+        object-fit: cover;
+        padding: 0.5rem 3rem;
+        display: none;
+    }
+    main > #main_page_section2 > #main_page_content_education > img {
+        width: 100vw;
+        height: 25vh;
+        object-fit: cover;
+        padding: 0.5rem 3rem;
+        display: none;
+
+    }
+    main > #main_page_section2 > #main_page_content_experience > img {
+        width: 100vw;
+        height: 25vh;
+        object-fit: cover;
+        padding: 0.5rem 3rem;
+        display: none;
+
     }
     }
